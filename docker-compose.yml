@@ -8,6 +8,8 @@ services:
       - "4445:4444" 
       - "4442:4442"
       - "4443:4443"
+    environment:
+      - GRID_BROWSER_TIMEOUT=300000
 
   ChromeService:
     image: selenium/node-chrome:4.0.0-rc-2-20210930
