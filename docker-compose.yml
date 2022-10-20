@@ -11,6 +11,7 @@ services:
     environment:
       - GRID_BROWSER_TIMEOUT=300000
       - GRID_TIMEOUT=300000
+      - SE_OPTS="-timeout 30000"
 
   ChromeService:
     image: selenium/node-chrome:4.0.0-rc-2-20210930
